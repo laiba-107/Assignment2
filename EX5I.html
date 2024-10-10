@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Numbers</title>
+  <script>
+    function isPrime(num) {
+      if (num <= 1) return false;
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+      }
+      return true;
+    }
+
+    function findPrimes() {
+      const limit = parseInt(document.getElementById("limitInput").value, 10);
+      const primes = [];
+      for (let i = 2; i <= limit; i++) {
+        if (isPrime(i)) primes.push(i);
+      }
+      document.getElementById("result").innerText = "Prime Numbers: " + primes.join(', ');
+    }
+  </script>
+</head>
+<body>
+<h1>Prime Numbers Finder</h1>
+<input type="number" id="limitInput" placeholder="Enter limit" />
+<button onclick="findPrimes()">Find Primes</button>
+<p id="result"></p>
+</body>
+</html>

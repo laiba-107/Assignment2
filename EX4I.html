@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Occurrence Counter</title>
+  <script>
+    function countWords() {
+      const text = document.getElementById("textInput").value;
+      const words = text.split(/\s+/);
+      const wordCount = {};
+      words.forEach(word => {
+        wordCount[word] = (wordCount[word] || 0) + 1;
+      });
+      document.getElementById("result").innerText = JSON.stringify(wordCount, null, 2);
+    }
+  </script>
+</head>
+<body>
+<h1>Word Occurrence Counter</h1>
+<textarea id="textInput" rows="4" cols="50" placeholder="Enter text"></textarea><br>
+<button onclick="countWords()">Count Words</button>
+<pre id="result"></pre>
+</body>
+</html>

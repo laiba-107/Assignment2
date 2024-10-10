@@ -1,0 +1,14 @@
+const obj = { name: "Alice", age: 25 };
+console.log("Initial Object:", obj);
+
+// Add a property
+obj.address = "123 Main St";
+console.log("After Adding Property:", obj);
+
+// Update a property
+obj.age = 26;
+console.log("After Updating Property:", obj);
+
+// Remove a property
+delete obj.address;
+console.log("After Removing Property:", obj);
