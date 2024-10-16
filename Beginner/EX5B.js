@@ -3,3 +3,4 @@ function largestNumber(arr) {
 }
 
 console.log("Largest number:", largestNumber([3, 5, 7, 2, 9]));  // Example output: 9
+<script src="EX6B.js">Next</script>

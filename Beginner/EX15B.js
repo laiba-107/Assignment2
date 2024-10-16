@@ -4,3 +4,4 @@ function printCurrentDateTime() {
 }
 
 printCurrentDateTime();  // Example output: current date and time
+<script src=".">Next</script>

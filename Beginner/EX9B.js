@@ -13,3 +13,4 @@ function fizzBuzz() {
 }
 
 fizzBuzz();
+<script src="EX10B.js">Next</script>

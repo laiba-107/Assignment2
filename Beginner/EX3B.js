@@ -3,3 +3,4 @@ function isEvenOrOdd(num) {
 }
 
 console.log(isEvenOrOdd(7));  // Example output: "Odd"
+<script src="EX4B.js">Next</script>

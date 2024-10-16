@@ -3,3 +3,4 @@ function numberToString(num) {
 }
 
 console.log("Number as string:", numberToString(12345));  // Example output: "12345"
+<script src="EX14B.js">Next</script>

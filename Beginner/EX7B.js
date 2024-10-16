@@ -8,3 +8,4 @@ function countVowels(str) {
 }
 
 console.log("Number of vowels:", countVowels("hello world"));  // Example output: 3
+<script src="EX8B.js">Next</script>

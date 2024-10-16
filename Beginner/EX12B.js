@@ -3,3 +3,4 @@ function generateRandom(min, max) {
 }
 
 console.log("Random number between 1 and 100:", generateRandom(1, 100));  // Example output: Random number
+<script src="EX13B.js">Next</script>

@@ -7,3 +7,4 @@ function factorial(n) {
 }
 
 console.log("Factorial:", factorial(5));  // Example output: 120
+<script src="EX9B.js">Next</script>

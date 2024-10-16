@@ -1,4 +1,4 @@
-const obj = { name: "Alice", age: 25 };
+const obj = {name: "Alice", age: 25};
 console.log("Initial Object:", obj);
 
 // Add a property
@@ -12,3 +12,4 @@ console.log("After Updating Property:", obj);
 // Remove a property
 delete obj.address;
 console.log("After Removing Property:", obj);
+<script src="EX4I.html">Next</script>

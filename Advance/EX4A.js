@@ -1,13 +1,21 @@
 function pipe(...funcs) {
-return function(initialValue) {
-return funcs.reduce((acc, func) => func(acc), initialValue);
-};
+    return function (initialValue) {
+        return funcs.reduce((acc, func) => func(acc), initialValue);
+    };
 }
 
 // Example functions
-function addOne(x) { return x + 1; }
-function multiplyByTwo(x) { return x * 2; }
-function subtractThree(x) { return x - 3; }
+function addOne(x) {
+    return x + 1;
+}
+
+function multiplyByTwo(x) {
+    return x * 2;
+}
+
+function subtractThree(x) {
+    return x - 3;
+}
 
 // Create a pipeline
 const pipeline = pipe(addOne, multiplyByTwo, subtractThree);

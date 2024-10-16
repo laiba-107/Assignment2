@@ -17,3 +17,4 @@ console.log("Result of addition:", calculator(10, 5, "add"));       // Example o
 console.log("Result of subtraction:", calculator(10, 5, "subtract")); // Example output: 5
 console.log("Result of multiplication:", calculator(10, 5, "multiply")); // Example output: 50
 console.log("Result of division:", calculator(10, 5, "divide"));     // Example output: 2
+<script src="EX11B.js">Next</script>

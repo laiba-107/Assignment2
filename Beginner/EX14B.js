@@ -3,3 +3,4 @@ function removeDuplicates(arr) {
 }
 
 console.log("Array without duplicates:", removeDuplicates([1, 2, 2, 3, 4, 4]));  // Example output: [1, 2, 3, 4]
+<script src="EX15B.js">Next</script>

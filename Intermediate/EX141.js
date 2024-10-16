@@ -14,3 +14,4 @@ function logMessage() {
 
 const throttledLog = throttle(logMessage, 2000);
 setInterval(throttledLog, 500);  // Function will be called every 2 seconds, even though it's triggered every 500ms
+<script src="EX151.html">Next</script>

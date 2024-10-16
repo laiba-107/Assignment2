@@ -3,3 +3,4 @@ function sumOfArray(arr) {
 }
 
 console.log("Sum of array:", sumOfArray([1, 2, 3, 4, 5]));  // Example output: 15
+<script src="EX12B.js">Next</script>

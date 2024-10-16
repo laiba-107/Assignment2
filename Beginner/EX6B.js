@@ -3,3 +3,4 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("madam"));  // Example output: true
+<script src="EX7B.js">Next</script>
