@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram Checker</title>
+</head>
+<body>
+    <h1>Anagram Checker</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function isAnagram(str1, str2) {
+            const normalize = str => str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
+            return normalize(str1) === normalize(str2);
+        }
+
+        console.log("Are 'listen' and 'silent' anagrams?", isAnagram("listen", "silent"));  // true
+    </script>
+</body>
+<a href="./EX7I.html">Next</a>
+<a href="./HomepageInter.html">Back to Homepage</a>
+</html>

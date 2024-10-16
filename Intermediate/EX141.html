@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Throttle Example</title>
+</head>
+<body>
+    <h1>Function Throttle Example</h1>
+    <p>Open the console to see the logs.</p>
+
+    <script>
+        function throttle(fn, delay) {
+            let lastCall = 0;
+            return function (...args) {
+                const now = new Date().getTime();
+                if (now - lastCall < delay) return;
+                lastCall = now;
+                return fn(...args);
+            };
+        }
+
+        function logMessage() {
+            console.log("Function executed");
+        }
+
+        const throttledLog = throttle(logMessage, 2000);
+        setInterval(throttledLog, 500);  // Function will be called every 2 seconds, even though it's triggered every 500ms
+    </script>
+</body>
+<a href="./EX151.html">Next</a>
+<a href="./HomepageInter.html">Back to Homepage</a>
+</html>

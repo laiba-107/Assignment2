@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Generator</title>
+</head>
+<body>
+    <h1>Fibonacci Sequence Generator</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function generateFibonacci(n) {
+            const fib = [0, 1];
+            for (let i = 2; i < n; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            return fib;
+        }
+
+        console.log("First 10 Fibonacci numbers:", generateFibonacci(10));  // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+    </script>
+</body>
+<a href="./EX11I.html">Next</a>
+<a href="./HomepageInter.html">Back to Homepage</a>
+</html>

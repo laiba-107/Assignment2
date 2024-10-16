@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Values Extractor</title>
+</head>
+<body>
+    <h1>Unique Values from Array</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function uniqueValues(arr) {
+            return [...new Set(arr)];
+        }
+
+        const array = [1, 2, 2, 3, 4, 4, 5];
+        console.log("Unique values:", uniqueValues(array));  // Output: [1, 2, 3, 4, 5]
+    </script>
+</body>
+<a href="./EX9I.html">Next</a>
+<a href="./HomepageInter.html">Back to Homepage</a>
+</html>

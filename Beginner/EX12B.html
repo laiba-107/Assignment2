@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function generateRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        console.log("Random number between 1 and 100:", generateRandom(1, 100));  // Example output: Random number
+    </script>
+</body>
+<a href="./EX13B.html">Next</a>
+<a href="./HomepageB.html">Back to Homepage</a>
+</html>

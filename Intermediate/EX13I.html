@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Clone Object</title>
+</head>
+<body>
+    <h1>Deep Clone Object</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function deepClone(obj) {
+            return JSON.parse(JSON.stringify(obj));
+        }
+
+        const original = {a: 1, b: {c: 2}};
+        const copy = deepClone(original);
+        copy.b.c = 3;
+        console.log("Original:", original);  // { a: 1, b: { c: 2 } }
+        console.log("Copy:", copy);  // { a: 1, b: { c: 3 } }
+    </script>
+</body>
+<a href="./EX141.html">Next</a>
+<a href="./HomepageInter.html">Back to Homepage</a>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Vowels</title>
+</head>
+<body>
+    <h1>Count Vowels in a String</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function countVowels(str) {
+            let vowels = "aeiouAEIOU";
+            let count = 0;
+            for (let char of str) {
+                if (vowels.includes(char)) count++;
+            }
+            return count;
+        }
+
+        console.log("Number of vowels:", countVowels("hello world"));  // Example output: 3
+    </script>
+</body>
+<a href="./EX8B.html">Next</a>
+<a href="./HomepageB.html">Back to Homepage</a>
+</html>

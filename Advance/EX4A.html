@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Pipeline Example</title>
+</head>
+<body>
+    <h1>Function Pipeline Example</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function pipe(...funcs) {
+            return function (initialValue) {
+                return funcs.reduce((acc, func) => func(acc), initialValue);
+            };
+        }
+
+        // Example functions
+        function addOne(x) {
+            return x + 1;
+        }
+
+        function multiplyByTwo(x) {
+            return x * 2;
+        }
+
+        function subtractThree(x) {
+            return x - 3;
+        }
+
+        // Create a pipeline
+        const pipeline = pipe(addOne, multiplyByTwo, subtractThree);
+
+        // Execute the pipeline
+        console.log(pipeline(5));  // Output: 9 ((5 + 1) * 2 - 3)
+    </script>
+</body>
+<a href="./EX5A.html">Next</a>
+<a href="./HomepageAd.html">Back to Homepage</a>
+</html>

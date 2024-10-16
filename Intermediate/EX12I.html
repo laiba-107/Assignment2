@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Intersection Finder</title>
+</head>
+<body>
+    <h1>Array Intersection Finder</h1>
+    <p>Open the console to see the result.</p>
+
+    <script>
+        function findIntersection(arr1, arr2) {
+            return arr1.filter(value => arr2.includes(value));
+        }
+
+        const array1 = [1, 2, 3, 4];
+        const array2 = [3, 4, 5, 6];
+        console.log("Intersection:", findIntersection(array1, array2));  // Output: [3, 4]
+    </script>
+</body>
+<a href="./EX13I.html">Next</a>
+<a href="./HomepageInter.html">Back to Homepage</a>
+</html>
